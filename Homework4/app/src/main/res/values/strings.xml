@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Homework4</string>
+    <string name="title_activity_maps">LocatorGator</string>
+    <string name="title_activity_changeMap">Locator</string>
+    <string name="application_title">Welcome to LocatorGator!</string>
+    <string name="locate_button">Locate</string>
+    <string name="choose_map_type">Map Type</string>
+
+</resources>

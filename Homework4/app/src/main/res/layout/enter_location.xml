@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#6b4ac166">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_weight="3"
+        android:layout_width="254dp"
+        android:layout_height="match_parent"
+        android:text="@string/application_title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/locationTitle"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textSize="@dimen/abc_action_bar_progress_bar_size" />
+
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="115dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/locatorgator"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:layout_weight="1" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationEditText"
+        android:paddingTop="50px"
+        android:text="Please Enter your Address" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locate_button"
+        android:id="@+id/locateButton"
+        android:layout_gravity="right"
+        android:onClick="findLocation"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/choose_map_type"
+        android:id="@+id/textView" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Normal - Your normal/everyday Map"
+        android:id="@+id/radioButtonNormal"
+        android:checked="true" />
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hybrid - Satellite View"
+        android:id="@+id/radioButtonHybrid" />
+     <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Terrain - Look at the scenery"
+        android:id="@+id/radioButtonTerrain" />
+    </RadioGroup>
+
+</LinearLayout>
